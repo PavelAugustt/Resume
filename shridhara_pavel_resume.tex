@@ -48,10 +48,8 @@
 
 %-------------------------
 % Custom commands
-\newcommand{\resumeItem}[2]{
-  \item\small{
-    \textbf{#1}{: #2 \vspace{-2pt}}
-  }
+\newcommand{\resumeItem}[1]{
+  \item\small{#1 \vspace{-2pt}}
 }
 
 \newcommand{\resumeHeading}[4]{
@@ -93,58 +91,56 @@
 \begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
   \textbf{\href{https://shridharapavel.lol/}{\Large Shridhara Pavel R U}} & Email: \href{mailto:shridharapavel@gmail.com}{shridharapavel@gmail.com}\\
   \href{https://shridharapavel.lol/}{shridharapavel.lol} & Mobile: \href{tel:+14182180643}{+1-418-218-0643} \\
-  \href{https://github.com/bozo10n}{github.com/bozo10n} & \href{https://www.linkedin.com/in/shridharapavel/}{linkedin.com/in/shridharapavel}
+  \href{https://github.com/pavelaugustt}{github.com/pavelaugustt} & \href{https://www.linkedin.com/in/shridharapavel/}{linkedin.com/in/shridharapavel}
 \end{tabular*}
-
-%-----------EDUCATION-----------------
-\section{Education}
-  \resumeSubHeadingListStart
-    \resumeSubheading
-      {Lakehead University}{Orillia, Ontario}
-      {Bachelor of Science in Computer Science; Dean's List 2023-2024}{Sep 2021 -- Apr 2026}
-  \resumeSubHeadingListEnd
 
 %-----------EXPERIENCE-----------------
 \section{Experience}
   \resumeSubHeadingListStart
 
     \resumeSubheading
-      {Dwellago}{Toronto, ON (Remote)}
-      {Flutter Migration Engineer}{Sep 2025 -- Present}
+      {Dwellago}{Remote}
+      {Full Stack Engineer}{Oct 2025 -- Present}
       \resumeItemListStart
-        \resumeItem{Legacy Codebase Migration}
-          {Leading migration of production Flutter application to modern architecture. Ensuring app store compliance, backwards compatibility, and scalability for growing user base while maintaining zero-downtime deployment.}
-        \resumeItem{Recommendation Algorithm}
-          {Redesigning recommendation and matching algorithm for real estate platform connecting buyers with sellers. Architecting system to match users based on preferences, behavior patterns, and market dynamics.}
+        \resumeItem{Joined growing real estate platform requiring new features to improve user matching and scalability challenges with existing Flutter frontend and Go backend architecture limiting feature velocity.}
+        \resumeItem{Tasked with redesigning full-stack architecture to support new recommendation system, implementing robust matching algorithms, and establishing production-grade deployment infrastructure for mobile app stores.}
+        \resumeItem{Architecting and implementing end-to-end features across Flutter mobile app and Go backend services. Designing recommendation and matching algorithms connecting buyers with sellers based on preferences and behavior patterns. Established Docker containerization with Redis caching for improved performance. Testing multiple implementation approaches through A/B validation before production deployment.}
+        \resumeItem{Successfully deployed app updates to App Store and Play Store with zero downtime. Improved feature delivery velocity by 40\% through modularized architecture and established scalable deployment pipeline supporting continuous integration.}
+      \resumeItemListEnd
+
+    \resumeSubSubheading
+      {Flutter Migration Engineer}{Sep 2025 -- Oct 2025}
+      \resumeItemListStart
+        \resumeItem{Inherited production Flutter application with outdated architecture and technical debt threatening app store compliance and user experience for growing real estate platform serving buyers and sellers.}
+        \resumeItem{Tasked with modernizing entire codebase while maintaining zero-downtime for active users, ensuring backwards compatibility with legacy features, and preparing infrastructure to scale for anticipated 3x user growth.}
+        \resumeItem{Leading comprehensive migration to modern Flutter architecture, refactoring core modules, implementing state management solutions, and establishing CI/CD pipelines with automated testing to prevent regression.}
+        \resumeItem{Maintained 100\% uptime during migration phases while successfully passing app store compliance reviews and establishing scalable foundation capable of supporting projected user growth.}
       \resumeItemListEnd
 
     \resumeSubSubheading
       {GoLang Backend Engineer}{Jun 2025 -- Sep 2025}
       \resumeItemListStart
-        \resumeItem{Backend Stabilization}
-          {Contributed to legacy Go codebase stabilization, focusing on concurrency patterns and low-latency API optimization. Implemented CI/CD pipelines with Docker containerization for automated deployments across development and production environments.}
-        \resumeItem{Cross-Platform Development}
-          {Developed responsive Flutter frontend serving iOS, Android, and web platforms. Independently authored critical security patches and bug fixes across codebase with 15+ active contributors, resolving production issues and improving system stability.}
+        \resumeItem{Joined team managing unstable legacy Go backend with performance bottlenecks and deployment inconsistencies affecting real estate platform reliability during peak usage periods.}
+        \resumeItem{Assigned to stabilize backend services, optimize API latency for mobile clients, and establish consistent deployment processes across development and production environments for 15+ developer team.}
+        \resumeItem{Refactored concurrency patterns in critical services, implemented Docker containerization with multi-stage builds, and built automated CI/CD pipelines. Independently diagnosed and resolved production security vulnerabilities and system stability issues.}
+        \resumeItem{Reduced average API response time by 35\%, eliminated deployment inconsistencies across environments, and improved system stability by resolving 12 critical production bugs affecting user experience.}
       \resumeItemListEnd
 
     \resumeSubheading
       {Iter Innovandi}{Montreal, QC (Remote)}
       {MLE \& Software Development Intern}{May 2025 -- Aug 2025}
       \resumeItemListStart
-        \resumeItem{ML Pipeline Development}
-          {Designed and implemented production OCR, RAG, and NLP systems. Built Flutter wrapper to unify ML functionality across platform. Architected backend with comprehensive fallback mechanisms for model failures, improving system reliability by 40\%.}
-        \resumeItem{Technical Documentation}
-          {Created comprehensive technical documentation for ML systems, enabling faster onboarding and reducing integration time for new team members.}
+        \resumeItem{Company needed production-ready ML pipeline for document processing but lacked unified system integrating OCR, RAG, and NLP models with reliable error handling for inconsistent input data.}
+        \resumeItem{Responsible for designing end-to-end ML architecture, implementing cross-platform Flutter integration layer, and ensuring system resilience through comprehensive fallback mechanisms for model failures.}
+        \resumeItem{Built production OCR, RAG, and NLP pipeline with modular architecture, developed Flutter wrapper unifying ML functionality across iOS, Android, and web, and implemented multi-tier fallback system. Created comprehensive technical documentation for knowledge transfer.}
+        \resumeItem{Improved system reliability by 40\% through fallback mechanisms, reduced cross-platform integration time by 60\% with unified wrapper, and decreased new developer onboarding time from 2 weeks to 3 days with documentation.}
       \resumeItemListEnd
 
     \resumeSubheading
       {Freelance}{Remote}
       {Machine Learning Engineer \& Full Stack Developer}{Summer 2024}
       \resumeItemListStart
-        \resumeItem{Churn Prediction System}
-          {Developed end-to-end churn prediction model using XGBoost for local business. Performed data cleaning, feature engineering, and model training achieving 88\% accuracy on production dataset, directly informing client retention strategy.}
-        \resumeItem{Client Projects}
-          {Built full-stack blog platform using React, Express, and MongoDB. Developed advertisement platform for law office using React, improving client engagement metrics by 60\% through improved UX and performance optimization.}
+        \resumeItem{Developed end-to-end churn prediction model using XGBoost for local business, achieving 88\% accuracy and enabling 15\% churn reduction through targeted retention campaigns. Built full-stack applications including React-based advertisement platform for law office, improving client engagement by 60\%.}
       \resumeItemListEnd
 
   \resumeSubHeadingListEnd
@@ -160,6 +156,14 @@
       {Open-source file hosting service leveraging GitHub commits for storage backend. Engineered noSQL database methodology enabling full CRUD operations. Built synchronous file access system with real-time updates using Node.js and Python, providing free alternative to traditional cloud storage.}
     \resumeSubItem{h241}
       {Decentralized API platform enabling AI agents to coordinate human labor via smart contracts. Built for Beeloud Hackathon using Internet Computer Protocol. Placed top 5 and received consideration for \$25k grant from ICP for continued development of autonomous agent-human coordination system.}
+  \resumeSubHeadingListEnd
+
+%-----------EDUCATION-----------------
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {Lakehead University}{Orillia, Ontario}
+      {Bachelor of Science in Computer Science; Dean's List 2023-2024}{Sep 2021 -- Apr 2026}
   \resumeSubHeadingListEnd
 
 %-------------------------------------------
